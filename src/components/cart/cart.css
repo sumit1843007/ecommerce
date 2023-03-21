@@ -1,0 +1,361 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.outer_box {
+    width: 100%;
+    min-height: calc(100vh - 165px);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_box {
+    width: 720px;
+    height: 200px;
+    margin: 15px 20%;
+    position: relative;
+    box-shadow: 7px 7px 30px 0 rgb(0, 0, 0, 17%);
+    border-radius: 10px;
+}
+
+.card_left {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 170px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card_img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 170px;
+    height: 170px;
+    border-radius: 10px;
+}
+
+.cost {
+    width: 170px;
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    background-color: rgb(255, 255, 255, 42%);
+    border-radius: 0 0 10px 10px;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.card_right {
+    position: absolute;
+    left: 200px;
+    top: 15px;
+    width: calc(100% - 215px);
+    height: 170px;
+}
+
+.card_top {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.card_middle {
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    height: 50px;
+    width: 100%;
+}
+
+.card_end {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+}
+
+.card_top span {
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    border-radius: 50px;
+    font-size: 44px;
+    line-height: 0px;
+    font-weight: 400;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+.heading {
+    font-size: 32px;
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.size {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 50px;
+    display: flex;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.size span {
+    font-weight: 600;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.quantity {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.quantity button {
+    border: 1px solid #d5d5d5;
+    background-color: #fff;
+    font-size: 32px;
+    line-height: 2px;
+    font-weight: 300;
+    border-radius: 5px;
+}
+
+.minus {
+    width: 40px;
+    height: 40px;
+    color: red;
+}
+
+.plus {
+    width: 40px;
+    height: 40px;
+    color: green;
+}
+
+.quantity span {
+    font-size: 22px;
+    margin: 5px 5px;
+    line-height: 40px;
+}
+
+.TotalDiv {
+    background-color: #3f98af;
+    margin: 20px auto;
+    padding: 20px 70px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.TotalDiv span {
+    color: #fff;
+}
+
+
+
+
+.star input[type="radio"] {
+    display: none;
+}
+
+.productSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productSearch input {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.empty {
+    /* background-color: #3f98af; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* height: 100vh; */
+}
+
+.empty .fill_it {
+    padding: 10px 0px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 740px) {
+    /* .leftBar {
+        position: relative;
+    } */
+
+    .productSearch {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        position: sticky;
+        top: 70px;
+        background-color: white;
+        z-index: 4;
+    }
+
+    .productSearch input {
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .card_box {
+        width: 375px;
+        height: 100px;
+        margin: 10px auto;
+    }
+
+    .card_left {
+        position: absolute;
+        top: 7.5px;
+        left: 7.5px;
+        width: 85px;
+        height: 85px;
+    }
+
+    .card_img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .cost {
+        width: 85px;
+        height: 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .card_right {
+        left: 100px;
+        top: 7.5px;
+        width: calc(100% - 107.5px);
+        height: 85px;
+    }
+
+    .card_top {
+        height: 25px;
+    }
+
+    .card_middle {
+        top: 30px;
+        height: 25px;
+    }
+
+    .card_end {
+        height: 25px;
+    }
+
+    .card_top span {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .close {
+        top: 2.5px;
+        right: 2.5px;
+        width: 20px;
+        height: 20px;
+        font-size: 24px;
+    }
+
+    .heading {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .size {
+        height: 25px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .size span {
+        font-size: 14px;
+        margin-right: 2.5px;
+    }
+
+    .quantity {
+        width: 100px;
+        height: 25px;
+    }
+
+    .quantity button {
+        border: 1px solid #d5d5d5;
+        background-color: #fff;
+        font-size: 16px;
+
+    }
+
+    .minus {
+        width: 20px;
+        height: 20px;
+        margin: 0 2.5px;
+    }
+
+    .plus {
+        width: 20px;
+        height: 20px;
+        margin: 0 2.5px;
+    }
+
+    .quantity span {
+        font-size: 12px;
+        margin: 3.5px;
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,159 @@
+* {
+    font-family: 'Roboto Mono',
+        monospace;
+    font-family: 'Source Sans Pro',
+        sans-serif;
+    box-sizing: border-box;
+}
+
+.place_box {
+    width: 800px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.place_left {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.place_left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .4s;
+}
+
+.place_left:hover img {
+    transform: scale(1.1);
+}
+
+.right_tital {
+    font-weight: 700;
+    margin: 5px 0px;
+
+}
+
+.place_left span {
+    margin: 9px 0px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #84bcc5db;
+
+    color: white;
+    font-size: 20px;
+    padding: 5px 0px;
+    overflow: hidden;
+}
+
+.place_right {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-left: 15px;
+    width: 600px;
+}
+
+.place_right .total_cost {
+    font-size: 20px;
+    margin: 9px 0px;
+}
+
+
+
+.footer {
+    /* margin: 9px 0px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .buy_button {
+    padding: 8px 18px;
+    border: none;
+    outline: none;
+    color: green;
+    cursor: pointer;
+
+}
+
+.footer .buy_button:hover {
+    padding: 8px 18px;
+    border: none;
+    outline: none;
+    color: red;
+    cursor: pointer;
+
+}
+
+.Size span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.placed_container_box {
+    min-height: calc(100vh - 190px);
+}
+
+.NO_oder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+    .right_tital p {
+        margin: 5px 0px;
+        font-size: 20px;
+        font-weight: 600;
+
+    }
+
+    .right_quantity p {
+        margin: 5px 0px;
+
+    }
+
+    .place_box {
+        width: 95%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .place_left {
+        width: 100%;
+        height: 250px;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .place_right {
+        margin: 10px 0px;
+        width: 100%;
+    }
+
+    .footer {
+        width: 88vw;
+    }
+
+
+
+}

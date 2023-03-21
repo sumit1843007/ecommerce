@@ -1,0 +1,98 @@
+.singleContainer {
+    display: flex;
+    margin: 30px;
+    gap: 20px;
+}
+
+.SinglePageImg {
+    flex: 1;
+}
+
+.SinglePageImg img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.singleContent p {
+    /* margin: 10px; */
+
+}
+
+.singleContent {
+    text-align: left;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around !important;
+}
+
+.singleContent p {
+    text-align: justify;
+    padding: 25px 0px;
+    line-height: 30px;
+}
+
+.singleContent h3 {
+    margin: 10px 0px;
+}
+
+.button {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.button p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+    padding: 5px;
+}
+
+.button button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.Add {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+    width: 140px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .singleContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        gap: 20px;
+    }
+
+    .singleContent p {
+        padding: 10px 0px;
+    }
+
+    .SinglePageImg img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .star {
+        margin: 10px 0px;
+        text-align: left;
+    }
+}
